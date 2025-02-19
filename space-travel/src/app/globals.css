@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-normal leading-normal tracking-normal min-h-screen overflow-x-hidden
+  }
+}
+
+@layer utilities {
+  .home-bg-large {
+    background: url('/assets/images/home/background-home-desktop.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .home-bg-small{
+    background: url('/assets/images/home/background-home-mobile.jpg') no-repeat center;
+    background-size: cover; 
+  }
+   .home-bg-medium{
+    background: url('/assets/images/home/background-home-tablet.jpg') no-repeat center;
+    background-size: cover; 
+  }
+ 
+}
